@@ -1,86 +1,52 @@
 <template>
   <v-app id="inspire">
-    <v-navigation-drawer
-      v-model="drawer"
-      app
-      clipped
-    >
-      <v-list dense>
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon>mdi-view-dashboard</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Dashboard</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon>mdi-cog</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Settings</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
+    <NavDrawer :drawer="drawer"/>
 
     <v-app-bar
-      app
-      clipped-left
+        app
+        clipped-left
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>Application</v-toolbar-title>
+      <v-toolbar-title>Gerrit Burger Online Resume</v-toolbar-title>
     </v-app-bar>
 
     <v-main>
       <v-container
-        class="fill-height"
-        fluid
+          class="fill-height pb-15"
+          fluid
       >
-        <v-row
-          align="center"
-          justify="center"
-        >
-          <v-col class="shrink">
-            <v-tooltip right>
-              <template v-slot:activator="{ on }">
-                <v-btn
-                  :href="source"
-                  icon
-                  large
-                  target="_blank"
-                  v-on="on"
-                >
-                  <v-icon large>mdi-code-tags</v-icon>
-                </v-btn>
-              </template>
-              <span>Source</span>
-            </v-tooltip>
-          </v-col>
-        </v-row>
+        <Home/>
+<!--        <wip/>-->
       </v-container>
     </v-main>
 
-    <v-footer app>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
+    <Footer/>
   </v-app>
 </template>
 
 <script>
-// import HelloWorld from "./components/HelloWorld";
+import NavDrawer from "@/components/NavDrawer.vue";
+import Home from "@/views/Home.vue";
+import Footer from "@/components/Footer.vue";
+// import wip from "@/components/WIP.vue";
 
 export default {
   name: "App",
 
+  props: {},
+
   components: {
-    // HelloWorld,
+    NavDrawer,
+    Home,
+    Footer,
+    // wip,
   },
 
-  data: () => ({
-    return: {},
-  }),
+  data() {
+    return {
+      drawer: false,
+    };
+  },
 
   created() {
     this.$vuetify.theme.dark = true;

@@ -1,0 +1,31 @@
+{
+  "0": {
+    "heading": "4-day BBD Bursar Week",
+    "location": "BBD Johannesburg",
+    "date": "2017/06",
+    "items": [
+      "Created a website for voting for presenters at a BBD presentation event",
+      "Out of the 4 bursar groups, our group’s project was chosen as the best",
+      "Stack used: Linux, Apache, MySQL, PHP (LAMP)"
+    ]
+  },
+  "1": {
+    "heading": "4-day BBD Bursar Week",
+    "location": "BBD Johannesburg",
+    "date": "2018/06",
+    "items": [
+      "Created a real-time scheduling web application connected to Outlook",
+      "Worked with Microsoft Azure"
+    ]
+  },
+  "2": {
+    "heading": "4-day BBD Bursar Week",
+    "location": "BBD Johannesburg",
+    "date": "2019/06",
+    "items": [
+      "Built software that calculated the shortest route a person can take when moving\nbetween major cities, this was then displayed on a map via the Google Maps Platform and the Google Vision API was used along with a camera to track a ball that was\nprogrammed to move to cones representing the cities in real life",
+      "I used the Arduino Platform to set up proximity sensors to detect when the ball is\nclose to the cone",
+      "Language used: C++"
+    ]
+  }
+}

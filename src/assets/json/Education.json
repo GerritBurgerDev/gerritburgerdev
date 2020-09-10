@@ -1,0 +1,29 @@
+{
+  "0": {
+    "heading": "Matriculated",
+    "location": "Vredendal High School",
+    "date": "2016",
+    "items": [
+      "80+ for 6/7 subjects",
+      "Average achieved: 84.43%"
+    ]
+  },
+  "1": {
+    "heading": "Bsc Mathematical Science",
+    "location": "Stellenbosch University",
+    "date": "2019",
+    "items": [
+      "Major: Computer Science",
+      "Major modules: Concurrency, Web development, Software Engeneering, Networking"
+    ]
+  },
+  "2": {
+    "heading": "BSc Computer Science (Hons)",
+    "location": "Stellenbosch University",
+    "date": "2020",
+    "items": [
+      "Honors project: Creating an interactive yearbook for the science faclty of Stellenbosch University",
+      "Modules include: Advanced Algorithms, Statistical Pattern Recognition, Computational Intelligence, Software Construction, Machine Learning, Functional Programming"
+    ]
+  }
+}
