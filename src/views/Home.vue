@@ -123,7 +123,7 @@
                                 <div
                                     class="text-center"
                                 >
-                                    <v-icon x-large color="grey darken-1" class="ml-4">
+                                    <v-icon x-large color="grey darken-1" class="ml-5">
                                         {{ icon }}
                                     </v-icon>
                                 </div>
@@ -144,7 +144,7 @@
                                 <div
                                     class="text-center"
                                 >
-                                    <v-img :src="src" height="35" width="35" class="ml-5"/>
+                                    <v-img :src="src" height="35" width="35" class="ml-6"/>
                                 </div>
                             </v-card>
                         </v-col>
@@ -165,7 +165,7 @@
                                 tile
                             >
                                 <div
-                                    class="text-center"
+                                    class="text-center ml-1"
                                 >
                                     <v-icon x-large color="grey darken-1" class="ml-4">
                                         {{ icon }}
@@ -186,7 +186,7 @@
                                 tile
                             >
                                 <div
-                                    class="text-center"
+                                    class="text-center ml-1"
                                 >
                                     <v-img :src="src" height="35" width="35" class="ml-5"/>
                                 </div>
@@ -695,12 +695,12 @@ export default {
                 require("@/assets/images/sql.png")
             ],
             technologiesIcons: [
-                "mdi-microsoft-windows",
                 "mdi-git",
                 "mdi-google-cloud",
                 "mdi-firebase"
             ],
             technologiesSRC: [
+                require('@/assets/images/azure.png'),
                 require('@/assets/images/arango.png'),
                 require('@/assets/images/neo4j.png'),
             ],
