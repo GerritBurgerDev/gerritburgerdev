@@ -3,7 +3,7 @@
         v-model="drawer"
         app
         clipped
-        stateless
+        disable-resize-watcher
     >
         <v-list dense>
             <v-list-item link

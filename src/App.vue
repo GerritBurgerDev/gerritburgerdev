@@ -29,21 +29,41 @@
 
         <v-main>
             <v-container
+                v-if="darkMode"
                 class="fill-height pb-15"
                 fluid
             >
-                <Home :darkMode="darkMode" />
+                <Home :darkMode="darkMode"/>
+            </v-container>
+            <v-container
+                v-else
+                class="fill-height pb-15"
+                fluid
+                style="background-color: #F5F5F5;"
+            >
+                <Home :dark-mode="darkMode"/>
             </v-container>
         </v-main>
 
-        <Footer/>
+        <Footer :footerColor="footerColor"/>
     </v-app>
 </template>
+
+<style>
+#inspire {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+</style>
 
 <script>
 import NavDrawer from "@/components/NavDrawer.vue";
 import Home from "@/views/Home.vue";
 import Footer from "@/components/Footer.vue";
+
 export default {
     name: "App",
 
@@ -59,6 +79,7 @@ export default {
         return {
             drawer: false,
             darkMode: true,
+            footerColor: '',
         };
     },
 
@@ -66,6 +87,9 @@ export default {
         changeTheme() {
             this.darkMode = !this.darkMode
             this.$vuetify.theme.dark = this.darkMode;
+
+            if (this.darkMode) this.footerColor = '';
+            else this.footerColor = 'background-color: #d1d1d1';
         }
     },
 
